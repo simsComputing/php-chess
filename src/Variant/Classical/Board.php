@@ -341,6 +341,7 @@ class Board extends \SplObjectStorage
             'castlingAbility' => $this->castlingAbility,
             'sq' => $piece->getSq(),
             'move' => $piece->getMove(),
+            'fen' => $this->toFen()
         ];
 
         return $this;
